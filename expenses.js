@@ -7,14 +7,6 @@ const text = document.getElementById("text");
 const amount = document.getElementById("amount");
 const notification = document.getElementById("notification");
 
-// const dummyTransactions = [
-//   { id: 1, text: "Flower", amount: -20 },
-//   { id: 2, text: "Salary", amount: 300 },
-//   { id: 3, text: "Book", amount: -10 },
-//   { id: 4, text: "Camera", amount: 150 },
-// ];
-
-// let transactions = dummyTransactions;
 
 const localStorageTransactions = JSON.parse(
   localStorage.getItem("transactions")
@@ -83,9 +75,9 @@ function updateValues() {
       .filter((value) => value < 0)
       .reduce((accumulator, value) => (accumulator += value), 0) * -1
   ).toFixed(2);
-  balance.innerText = `$${total}`;
-  moneyPlus.innerText = `$${income}`;
-  moneyMinus.innerText = `$${expense}`;
+  balance.innerText = `₹${total}`;
+  moneyPlus.innerText = `₹${income}`;
+  moneyMinus.innerText = `₹${expense}`;
 }
 
 function removeTransaction(id) {

@@ -6,14 +6,17 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background-image:url("https://tse1.mm.bing.net/th?id=OIP.2HIX184r17IvA1VRuXdtbAHaFL&pid=Api&P=0");
+	background-image: linear-gradient( 116.5deg, rgba(126,255,248,1) 37.7%, rgba(254,162,180,1) 72.1% );
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
 }
 .main{
 	width: 350px;
 	height: 500px;
 	
 	overflow: hidden;
-	background-image: url("https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW9uZXl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+	background-image: radial-gradient( circle farthest-corner at 10% 20%, #0f2959 0%, #6db4c6 90% );
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 	background-repeat: no-repeat;
@@ -71,7 +74,7 @@ button:hover{
 }
 .login{
 	height: 460px;
-	background: #eee;
+	background: linear-gradient(145deg, rgb(195, 240, 200), rgb(80, 155, 245));
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
